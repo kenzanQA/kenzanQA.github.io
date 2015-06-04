@@ -44,10 +44,15 @@
                   <a href="#hackNight" id='hackNightSection'>Hack Night</a>
               </li>
               <li class="login_form">
-                <form name="f1" id="f1" onsubmit="$('form').get(0).setAttribute('action', 'homepage.html');">
+                <form name="f1" id="f1" onsubmit="login()">
               <table>
                   <tr>
-                      <td class="f1_label">Logged in as: testAccount1</td>
+                      <td class="f1_label">User Name :</td><td><input type="text" name="username" id="username" value="" />
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="f1_label">Password  :</td><td><input type="password" name="password" id="password" value=""  />
+                      </td>
                   </tr>
                   <tr>
                       <td>
@@ -226,7 +231,168 @@
 
 
 
-    
+      <div id="hackNight" class="section hackNight">
+          <div class="heading">
+            <h2><span><a href="http://www.meetup.com/Kenzan-Media-Pawtucket-Hack-Nights/"> <img id="meetupLogo" src="imgs/meetup-logo.png"/></a></span></h2>
+        </div>
+        <div class="content" id="hackNightContent">
+          <div id="hackNightBar"></div>
+
+            <h3><a href="http://www.meetup.com/Kenzan-Media-Pawtucket-Hack-Nights/">Join us at Hack Night!</a></h3>
+
+                <div class="mobileShow">
+                  <script type="text/javascript" src="js/galleriffic.gallery.js"></script>
+                  <div class="jcarousel-wrapper">
+                          <div class="jcarousel">
+                              <ul>
+                                  <li><img src="imgs/hacknight-album/hack-night-2.jpeg" width="600" height="400" alt=""></li>
+                                  <li><img src="imgs/hacknight-album/hack-night-3.jpeg" width="600" height="400" alt=""></li>
+                                  <li><img src="imgs/hacknight-album/hack-night-4.jpeg" width="600" height="400" alt=""></li>
+                                  <li><img src="imgs/hacknight-album/hack-night-5.jpeg" width="600" height="400" alt=""></li>
+                                  <li><img src="imgs/hacknight-album/hack-night-6.jpeg" width="600" height="400" alt=""></li>
+                                  <li><img src="imgs/hacknight-album/hack-night-7.jpeg" width="600" height="400" alt=""></li>
+                                  <li><img src="imgs/hacknight-album/hack-night-8.jpeg" width="600" height="400" alt=""></li>
+                                  <li><img src="imgs/hacknight-album/hack-night-9.jpeg" width="600" height="400" alt=""></li>
+                                  <li><img src="imgs/hacknight-album/hack-night-10.jpeg" width="600" height="400" alt=""></li>
+                                  <li><img src="imgs/hacknight-album/hack-night-11.jpeg" width="600" height="400" alt=""></li>
+                              </ul>
+                          </div>
+
+                          <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                          <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                          
+                          <p class="jcarousel-pagination">
+                              
+                          </p>
+                      </div>
+                </div>
+                <div class="mobileHide">
+                  <div id="page">
+                    <div id="container">
+                      <div id="gallery" class="gallerifficContent"> 
+                        <div id="controls" class="controls"></div>
+                      <div id="loading" class="loader"></div>
+                      <div id="slideshow" class="slideshow"></div>
+                    </div>
+                    <div id="thumbs" class="navigation">
+                      <ul class="thumbs">
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-2.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-10.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-5.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-4.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-3.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-6.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-7.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-8.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-9.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-10.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-11.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-2.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-11.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-2.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-10.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-11.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-3.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-4.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-6.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-5.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-10.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-3.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-2.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                          <img src="imgs/hacknight-album/hack-night-7.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-8.jpeg"/>
+                        </li>
+                        <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4" id="hackNightGallery">
+                            <img src="imgs/hacknight-album/hack-night-9.jpeg"/>
+                        </li>
+                      </ul>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </div>
+                </div>
+              </div>
+  
+          <div>
+              <p>&nbsp;</p>
+            </div>
+          <div>
+                <p>Kenzan Media Hack Night for developers who want to collaborate on projects with passionate peers. Bring your own project or work with someone else. Developers of all experience level are welcome. </p>
+            </div>
+            <div>
+              <p>&nbsp;</p>
+            </div>
+            <div>
+                <p>PA few developers from Kenzan Media will be there to help out as well as provide the essential needs - good attitude, a bit of experience, food and beverages.</p>
+            </div>
+            <div>
+              <p>&nbsp;</p>
+            </div>
+            <div>
+              <p>We get started around 6pm and will keep going until 9pm (or when we can't pry the eyelids open anymore).</p>
+            </div>
+
+              
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">         
+                  <div class="modal-body">                
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+        </div>
+      </div>
+
       <div id="contact" class="section contact">
          <div class="content" id="test"></div>
       </div>
